@@ -4,9 +4,8 @@
 <img src="./TheSettlementGap.png" alt="The Settlement Gap" width="250" height="250">
 </div>
 
-**How do we get customer accounts to meet with the Ethereum blockchain?**
-
-The main problems are a delayed transaction finality and a variable transaction cost. 
+**How do we allow customers to with the Ethereum blockchain?**
+Using the current digital experience, i.e. the online banking app, how can we allow customers to buy and sell cryptocurrency without exposing the bank or customer to risk. The main problems are a delayed transaction finality and a variable transaction cost. 
 These problems are significant but not insurmountable.
 
 ### Executive Summary
