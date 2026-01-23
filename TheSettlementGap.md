@@ -5,11 +5,13 @@
 </div>
 
 **How do we allow customers to with the Ethereum blockchain?**
-Using the current digital experience, i.e. the online banking app, how can we allow customers to buy and sell cryptocurrency without exposing the bank or customer to risk. The main problems are a delayed transaction finality and a variable transaction cost. 
+
+### Basic Problem Definition
+
+Using the current digital experience, i.e. the online banking app, how can we allow customers to buy and sell cryptocurrency without exposing the bank or customer to risk? The main problems are a delayed transaction finality and a variable transaction cost. 
 These problems are significant but not insurmountable.
 
-### Executive Summary
-
+**Delayed Transaction Finality**
 Your bank’s traditional ledger and the Ethereum blockchain differ when it comes to settlement time and transaction certainty.
 In a traditional bank, when you move money from savings to checking, the bank’s computer simply updates a database. 
 Once the screen says "Success," it is deterministic—meaning it is a done deal.
@@ -25,8 +27,15 @@ This table describes those states:
 
 The problem is this 12 minute window when the transaction is unconfirmed in Ethereum. As a bank, there can be no doubt about the transaction's state at any time.
 
-There is also the issue of Gas. 
+**Variable Transaction Cost**
 Each Ethereum transaction requires gas, a minimum charge plus a variable charge which together make the transaction fee. The higher the fee, the shorter the time to finality. If the bank does not want to pay up-front for the user's transaction, it needs to ensure the user has enough currency to pay the transaction fee.
+
+### Other considerations.
+A bank should not have access to a customer's private key or mnemonic phrase.
+All communications should be encrypted and restricted through firewalls and APIs.
+AML compliance needs to be in place to restrict money laundering through the blockchain.
+
+
 
 
 
