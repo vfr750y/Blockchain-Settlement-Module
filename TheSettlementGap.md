@@ -31,9 +31,10 @@ The problem is this 12 minute window when the transaction is unconfirmed in Ethe
 Each Ethereum transaction requires gas, a minimum charge plus a variable charge which together make the transaction fee. The higher the fee, the shorter the time to finality. If the bank does not want to pay up-front for the user's transaction, it needs to ensure the user has enough currency to pay the transaction fee.
 
 ### Other considerations.
-- A bank should not have access to a customer's private key or mnemonic phrase.
-- All communications should be encrypted and restricted through firewalls and APIs.
-- AML compliance needs to be in place to restrict money laundering through the blockchain.
+
+- How can the bank facilitate the transfer of crypto funds without having access to the customer's wallet, private keys or mnemonic phrase?
+- How can the bank make sure that communications cannot be read by malicious actors or that security of banking systems is not compromised?
+- How can the bank ensure that their customers are checked for compliance with anti money laundering regulations?
 
 
 
