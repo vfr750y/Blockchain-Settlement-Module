@@ -49,9 +49,9 @@ graph TD
     OM -- "11. Notify Success & Show New Balance" --> Customer
 
     %% --- ASYNC POST-PROCESS ---
-    CBS -.- "12. Daily Data Feed" -> Recon
-    SL -.- "Crypto Data Feed" -> Recon
-    Custody -.- "Vault Data Feed" -> Recon
+    CBS -. "12. Daily Data Feed" .-> Recon
+    SL -. "Crypto Data Feed" .-> Recon
+    Custody -. "Vault Data Feed" .-> Recon
 
     %% Styling
     classDef internal fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000;
