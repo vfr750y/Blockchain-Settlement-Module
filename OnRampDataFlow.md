@@ -11,10 +11,10 @@ graph TD
     end
 
     subgraph "External Composable Integrations"
-        KYC[Identity & Compliance Service (KYC/KYT)]
+        KYC["Identity & Compliance Service (KYC/KYT)"]
         LP[Liquidity Provider / Exchange]
         Custody[Digital Asset Custody Provider]
-        Rails[Payment Rails (RTP/FedNow)]
+        Rails["Payment Rails (RTP/FedNow)"]
     end
 
     %% --- FLOW INITIATION ---
@@ -34,12 +34,12 @@ graph TD
     %% --- EXECUTION PHASE (If Confirmed) ---
     Customer -- "6. Confirm Transaction" --> OM
 
-    %% Fiat Leg parallel process
+    %% Fiat Leg
     OM -- "7a. Debit Customer Fiat Account" --> CBS
     OM -- "7b. Initiate Fiat Settlement to LP" --> Rails
     Rails -.-> LP
 
-    %% Crypto Leg parallel process
+    %% Crypto Leg
     OM -- "7c. Execute Buy Order against Quote" --> LP
     LP -- "8. Deliver BTC directly to Vault" --> Custody
     Custody -- "9. Confirm BTC Receipt & New Balance" --> OM
@@ -52,7 +52,6 @@ graph TD
     CBS -.- "12. Daily Data Feed" -> Recon
     SL -.- "Crypto Data Feed" -> Recon
     Custody -.- "Vault Data Feed" -> Recon
-    Recon -- "Async Matching & Reporting" --- Recon
 
     %% Styling
     classDef internal fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000;
