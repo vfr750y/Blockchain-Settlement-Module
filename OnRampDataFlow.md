@@ -60,5 +60,4 @@ graph TD
 
     class OM,CBS,SL,Recon internal;
     class KYC,LP,Custody,Rails external;
-    class Customer actor;
-    ```
+    class Customer actor;```
